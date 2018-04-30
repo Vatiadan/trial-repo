@@ -20,12 +20,21 @@ Vue.component('patient', require('./components/patient'));
 Vue.component('visitor', require('./components/visitor'));
 Vue.component('billing', require('./components/billing'));
 Vue.component('tab', require('./components/tab'));
+Vue.component('info',require('./components/info'));
+Vue.component('footers',require('./components/footers'));
 
 
 
-import BootstrapVue from 'bootstrap-vue'
+let VeeValidate = require('vee-validate')
+
+Vue.use(VeeValidate);
+let BootstrapVue =require('bootstrap-vue')
 Vue.use(BootstrapVue);
 
+
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data:{
+
+    }
 });

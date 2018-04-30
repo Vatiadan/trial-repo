@@ -1,6 +1,7 @@
 <template>
 
     <div>
+         <info></info>
         <div class="container">
             <ul class="nav">
                 <li class="nav-item">
@@ -52,14 +53,17 @@
                 </div>
             </b-tabs>
         </b-card>
+        <footers></footers>
 
     </div>
 
 </template>
 
 <script>
+
     import { Tabs } from 'bootstrap-vue/es/components';
     Vue.use(Tabs);
+
 
     export default {
         name: "tab",
